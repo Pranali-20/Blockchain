@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+**/package-lock.json
+
+# Hardhat
+cache/
+**/cache/
+artifacts/
+**/artifacts/
+typechain/
+**/typechain/
+typechain-types/
+**/typechain-types/
+
+# Environment
+.env
+.env.local
+**/.env*
+
+# Build files
+dist/
+**/dist/
+build/
+**/build/
+
+# Uploads & Temp files
+uploads/*
+**/uploads/*
+!**/uploads/.gitkeep
+sample_data/local_db.json
+**/sample_data/local_db.json
+
+# OS files
+.DS_Store
+Thumbs.db
