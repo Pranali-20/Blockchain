@@ -1,0 +1,23 @@
+{
+  "name": "medical-record-blockchain",
+  "version": "1.0.0",
+  "description": "Smart contracts for Medical Record Verification System",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy": "hardhat run scripts/deploy.js"
+  },
+  "keywords": ["blockchain", "solidity", "medical-records", "verification", "sha256"],
+  "author": "Pranali-20",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0"
+  }
+}
