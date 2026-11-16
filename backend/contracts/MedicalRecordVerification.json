@@ -1,0 +1,456 @@
+{
+  "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "adminAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "networkName": "localhost",
+  "chainId": 31337,
+  "deployedAt": "2026-10-07T10:23:06.822Z",
+  "abi": [
+    {
+      "type": "constructor",
+      "stateMutability": "undefined",
+      "payable": false,
+      "inputs": []
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "AdminTransferred",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "previousAdmin",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "newAdmin",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "ProviderAuthorized",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "provider",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "authorizedBy",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "ProviderRevoked",
+      "inputs": [
+        {
+          "type": "address",
+          "name": "provider",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "revokedBy",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "RecordRegistered",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "recordId",
+          "indexed": true
+        },
+        {
+          "type": "bytes32",
+          "name": "recordHash",
+          "indexed": false
+        },
+        {
+          "type": "address",
+          "name": "provider",
+          "indexed": true
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "indexed": false
+        },
+        {
+          "type": "string",
+          "name": "documentReference",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "anonymous": false,
+      "name": "RecordVerified",
+      "inputs": [
+        {
+          "type": "string",
+          "name": "recordId",
+          "indexed": true
+        },
+        {
+          "type": "address",
+          "name": "verifier",
+          "indexed": true
+        },
+        {
+          "type": "bytes32",
+          "name": "expectedHash",
+          "indexed": false
+        },
+        {
+          "type": "bytes32",
+          "name": "providedHash",
+          "indexed": false
+        },
+        {
+          "type": "bool",
+          "name": "isValid",
+          "indexed": false
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp",
+          "indexed": false
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "admin",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "address",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "authorizeProvider",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_provider"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "type": "function",
+      "name": "authorizedProviders",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": ""
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "getAllRecordIds",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "string[]",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "getProviders",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "address[]",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "getRecord",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [
+        {
+          "type": "string",
+          "name": "_recordId"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "string",
+          "name": "recordId"
+        },
+        {
+          "type": "bytes32",
+          "name": "recordHash"
+        },
+        {
+          "type": "address",
+          "name": "provider"
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp"
+        },
+        {
+          "type": "string",
+          "name": "documentReference"
+        },
+        {
+          "type": "bool",
+          "name": "exists"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "getRecordCount",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "uint256",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "getVerificationAudits",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [],
+      "outputs": [
+        {
+          "type": "tuple[]",
+          "name": "",
+          "components": [
+            {
+              "type": "string",
+              "name": "recordId"
+            },
+            {
+              "type": "address",
+              "name": "verifier"
+            },
+            {
+              "type": "bytes32",
+              "name": "queryHash"
+            },
+            {
+              "type": "bool",
+              "name": "isValid"
+            },
+            {
+              "type": "uint256",
+              "name": "timestamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "isProviderAuthorized",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_provider"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "registerRecord",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "string",
+          "name": "_recordId"
+        },
+        {
+          "type": "bytes32",
+          "name": "_recordHash"
+        },
+        {
+          "type": "string",
+          "name": "_documentReference"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "type": "function",
+      "name": "revokeProvider",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_provider"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "type": "function",
+      "name": "transferAdmin",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "address",
+          "name": "_newAdmin"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "type": "function",
+      "name": "verifyRecord",
+      "constant": false,
+      "payable": false,
+      "inputs": [
+        {
+          "type": "string",
+          "name": "_recordId"
+        },
+        {
+          "type": "bytes32",
+          "name": "_calculatedHash"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "isValid"
+        },
+        {
+          "type": "bytes32",
+          "name": "storedHash"
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp"
+        },
+        {
+          "type": "address",
+          "name": "provider"
+        },
+        {
+          "type": "string",
+          "name": "documentReference"
+        }
+      ]
+    },
+    {
+      "type": "function",
+      "name": "verifyRecordView",
+      "constant": true,
+      "stateMutability": "view",
+      "payable": false,
+      "inputs": [
+        {
+          "type": "string",
+          "name": "_recordId"
+        },
+        {
+          "type": "bytes32",
+          "name": "_calculatedHash"
+        }
+      ],
+      "outputs": [
+        {
+          "type": "bool",
+          "name": "isValid"
+        },
+        {
+          "type": "bytes32",
+          "name": "storedHash"
+        },
+        {
+          "type": "uint256",
+          "name": "timestamp"
+        },
+        {
+          "type": "address",
+          "name": "provider"
+        },
+        {
+          "type": "string",
+          "name": "documentReference"
+        }
+      ]
+    }
+  ]
+}

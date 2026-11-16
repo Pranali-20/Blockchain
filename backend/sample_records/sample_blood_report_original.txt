@@ -1,0 +1,18 @@
+=====================================================
+METROPOLITAN GENERAL HOSPITAL - CLINICAL LAB REPORT
+Record ID: MR-DEMO-2026-001
+Date of Examination: 2026-03-15
+Department: Clinical Biochemistry
+-----------------------------------------------------
+TEST NAME                 RESULT      REFERENCE RANGE
+Fasting Blood Glucose     92 mg/dL    (70 - 99 mg/dL)
+Blood Urea Nitrogen (BUN) 14 mg/dL    (7 - 20 mg/dL)
+Serum Creatinine          0.9 mg/dL   (0.6 - 1.2 mg/dL)
+Total Cholesterol         185 mg/dL   (< 200 mg/dL)
+HDL Cholesterol           55 mg/dL    (> 40 mg/dL)
+LDL Cholesterol           110 mg/dL   (< 100 mg/dL)
+Hemoglobin A1c            5.4 %       (< 5.7 %)
+-----------------------------------------------------
+Physician Diagnosis: Normal metabolic profile. No acute abnormalities.
+Attending Physician: Dr. Sarah Jenkins, MD (Lic #MD-99482)
+=====================================================

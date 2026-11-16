@@ -1,0 +1,18 @@
+=====================================================
+METROPOLITAN GENERAL HOSPITAL - CLINICAL LAB REPORT
+Record ID: MR-DEMO-2026-001
+Date of Examination: 2026-03-15
+Department: Clinical Biochemistry
+-----------------------------------------------------
+TEST NAME                 RESULT      REFERENCE RANGE
+Fasting Blood Glucose     188 mg/dL   (70 - 99 mg/dL) [TAMPERED]
+Blood Urea Nitrogen (BUN) 38 mg/dL    (7 - 20 mg/dL)  [TAMPERED]
+Serum Creatinine          2.4 mg/dL   (0.6 - 1.2 mg/dL)[TAMPERED]
+Total Cholesterol         295 mg/dL   (< 200 mg/dL)   [TAMPERED]
+HDL Cholesterol           28 mg/dL    (> 40 mg/dL)    [TAMPERED]
+LDL Cholesterol           220 mg/dL   (< 100 mg/dL)   [TAMPERED]
+Hemoglobin A1c            9.8 %       (< 5.7 %)       [TAMPERED]
+-----------------------------------------------------
+Physician Diagnosis: Severe Diabetic Ketoacidosis and Renal Impairment!
+Attending Physician: Dr. Sarah Jenkins, MD (Lic #MD-99482)
+=====================================================
